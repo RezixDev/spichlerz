@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      charset="UTF-8"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <title>Spichlerz</title>
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <ui-header
+      menu-items='[
+{"text": "My Pantry", "href": "#home"},
+{"text": "Recipes", "href": "#services"},
+{"text": "Shopping List", "href": "#about"},
+{"text": "Expiration Tracker", "href": "#contact"},
+{"text": "Nutrition Insights", "href": "#contact"}
+]'
+      color="#406459"
+    >
+      <ui-button text="Sign Up" href="#extra" color="#406459"></ui-button>
+      <ui-button
+        text="Login"
+        href="#extra"
+        color="#406459"
+        mode="filled"
+      ></ui-button>
+    </ui-header>
+
+    <ui-hero
+      layout-direction="image-right"
+      hero-title="Welcome to Your Smart Kitchen!"
+      hero-desc="Streamline your kitchen experience with Spichlerz - smart, simple, and sustainable."
+      teaser-title-color="#406459"
+      hero-image="assets/images/hero/hero_1.png"
+    >
+      <ui-button text="Sign Up" href="#extra" color="#406459"></ui-button>
+    </ui-hero>
+
+    <ui-content-box
+      title="Revolution in kitchen management"
+      description="With Spichlerz, we're redefining the way you interact with your kitchen. <br> Dive into a seamless experience that blends convenience with smart technology."
+      titlecolor="#406459"
+    ></ui-content-box>
+
+    <div class="card-container">
+      <ui-card
+        src="assets/images/card/icon_food_recipes.png"
+        alt=""
+        content="Food Recipes"
+        hover-bg-color="#406459"
+      ></ui-card>
+      <ui-card
+        src="assets/images/card/icon_nutrition_insights.png"
+        alt=""
+        content="Nutrition Insights"
+        hover-bg-color="#406459"
+      ></ui-card>
+      <ui-card
+        src="assets/images/card/icon_shopping_list.png"
+        alt=""
+        content="Shopping List"
+        hover-bg-color="#406459"
+      ></ui-card>
+      <ui-card
+        src="assets/images/card/icon_food_database.png"
+        alt="Food Database"
+        content="Food Database"
+        hover-bg-color="#406459"
+      ></ui-card>
+    </div>
+
+    <ui-hero
+      layout-direction="image-left"
+      hero-title="Discover the Future of Cooking with Spichlerz!"
+      hero-desc="Embrace efficiency and sustainability in your kitchen. Join us now and transform the way you cook, store, and enjoy food."
+      teaser-title-color="#406459"
+      hero-image="assets/images/hero/hero_2.png"
+    >
+      <ui-button text="Join Now!" href="#extra" color="#406459"></ui-button>
+    </ui-hero>
+    <ui-faq
+      color="#406459"
+      faqs='[
+      {"question": "What is Spichlerz?", "answer": "Spichlerz is a smart kitchen management tool designed to streamline your cooking and food storage experience."},
+      {"question": "How can Spichlerz help in kitchen management?", "answer": "Spichlerz offers features like a pantry manager, recipe organizer, shopping list, expiration tracker, and nutrition insights to make kitchen management efficient and sustainable."},
+      {"question": "What features does Spichlerz offer?", "answer": "Features include a pantry manager, recipe organizer, shopping list, expiration tracker, and nutrition insights."},
+      {"question": "How does the Expiration Tracker work?", "answer": "The Expiration Tracker helps you keep track of food expiry dates to reduce waste and ensure food safety."},
+      {"question": "Can I access nutrition insights for all recipes?", "answer": "Yes, Spichlerz provides nutrition insights for each recipe, helping you make informed dietary choices."}
+    ]'
+    ></ui-faq>
+
+    <ui-footer
+      menus='[
+    {"title": "Explore", "items": [{"text": "About Us", "url": "#"}, {"text": "Blog", "url": "#"}, {"text": "Careers", "url": "#"}, {"text": "Contact Us", "url": "#"}]},
+    {"title": "Support", "items": [{"text": "FAQ", "url": "#"}, {"text": "Help Center", "url": "#"}, {"text": "Privacy Policy", "url": "#"}, {"text": "Terms of Service", "url": "#"}]},
+    {"title": "Community", "items": [{"text": "Events", "url": "#"}, {"text": "Forums", "url": "#"}, {"text": "Newsletters", "url": "#"}, {"text": "Testimonials", "url": "#"}]}
+  ]'
+      social-links='[
+    {"name": "Facebook", "url": "https://facebook.com", "icon": "assets/images/social/facebook.svg"},
+    {"name": "Twitter", "url": "https://twitter.com", "icon": "assets/images/social/twitter.svg"},
+    {"name": "Instagram", "url": "https://instagram.com", "icon": "assets/images/social/instagram.svg"}
+  ]'
+      background-color="#284f44"
+      hover-color="#4CAF50"
+    >
+      <ui-button
+        slot="newsletter-button"
+        text="Subscribe"
+        href="#subscribe"
+        color="#ffffff"
+        mode="filled"
+        full-width
+      ></ui-button
+    ></ui-footer>
+
+    <script type="module" src="/src/js/ui-button.js"></script>
+    <script type="module" src="/src/js/ui-header.js"></script>
+    <script type="module" src="/src/js/ui-hero.js"></script>
+    <script type="module" src="/src/js/ui-content-box.js"></script>
+    <script type="module" src="/src/js/ui-card.js"></script>
+    <script type="module" src="/src/js/ui-faq.js"></script>
+    <script type="module" src="/src/js/ui-footer.js"></script>
+  </body>
+</html>
